@@ -38,12 +38,14 @@ public class Main {
             if (activeOp == null)
                 activeOp =LoginSystem.run();
         }
+
+        SaveSystem.serializeOperatorProfiles();
     }
 
     private static void resetDataBase() {
         SaveSystem.addCustomer(new Customer());
-        SaveSystem.addCustomer(new Customer("Uthayasankar"));
-        SaveSystem.addCustomer(new Customer("Chandana"));
+        SaveSystem.addCustomer(new Customer("Anuja"));
+        SaveSystem.addCustomer(new Customer("Pulindu"));
         SaveSystem.serializeCustomers();
 
         SaveSystem.addItem(new GloceryItem("V000","Pumpkin", 150f));

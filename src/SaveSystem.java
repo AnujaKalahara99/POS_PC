@@ -51,7 +51,7 @@ public class SaveSystem {
         try (FileInputStream fileIn = new FileInputStream("inventory "+Main.getBranch()+" .ser");
              ObjectInputStream in = new ObjectInputStream(fileIn)) {
             items = (ArrayList<GloceryItem>)in.readObject();
-            System.out.println("Inventory loaded successfully!\n");
+            System.out.println("Inventory loaded successfully!");
         } catch (IOException | ClassNotFoundException e) {
         }
         return items;
@@ -68,7 +68,6 @@ public class SaveSystem {
              ObjectOutputStream out = new ObjectOutputStream(fileOut)) {
             out.writeObject(customers);
             System.out.println("Customers saved successfully!");
-
         } catch (IOException error){
         }
     }
@@ -77,7 +76,7 @@ public class SaveSystem {
         try (FileInputStream fileIn = new FileInputStream("customers "+Main.getBranch()+" .ser");
              ObjectInputStream in = new ObjectInputStream(fileIn)) {
             customers = (ArrayList<Customer>)in.readObject();
-            System.out.println("Customers loaded successfully!\n");
+            System.out.println("Customers loaded successfully!");
         } catch (IOException | ClassNotFoundException e) {
         }
         return customers;

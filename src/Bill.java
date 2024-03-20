@@ -6,7 +6,7 @@ public class Bill implements Serializable{
     private String cashierName;
     private String branch;
     private String customerName;
-    private HashMap<GloceryItem,Float> itemList; //hashmap
+    private HashMap<GloceryItem,Float> itemList=new HashMap<>(); //hashmap
     private float totalDiscount;
     private float totalPrice;
     private LocalDateTime dateTime; //should output this as dtf.format(dateTime)

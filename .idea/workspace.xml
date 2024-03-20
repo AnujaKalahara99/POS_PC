@@ -6,26 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoginSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Operator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Operator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/POS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/POS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SaveSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SaveSystem.java" afterDir="false" />
     </list>
     <list id="903778e4-ae88-44f3-9b42-c058d1d62739" name="Changes by Pulindu" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/POS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/POS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SaveSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SaveSystem.java" afterDir="false" />
     </list>
     <list id="a8077708-321a-45f2-b370-80d389bb79fd" name="Changes by Pulindu2" comment="" />
-    <list id="2d06b496-82ab-47a5-8b68-6d7702b9e5a4" name="Changes by User" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/POS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/POS.java" afterDir="false" />
-    </list>
+    <list id="2d06b496-82ab-47a5-8b68-6d7702b9e5a4" name="Changes by User" comment="" />
     <list id="d30fd1b2-5826-4cf7-964a-503de5307170" name="Changes by wada karapan" comment="">
       <change beforePath="$PROJECT_DIR$/src/Bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LoginSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/POS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/POS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,54 +39,24 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/src/POS.java">
       <ranges>
-        <range start1="2" end1="3" start2="2" end2="2" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
-        <range start1="5" end1="6" start2="4" end2="5" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
-        <range start1="8" end1="8" start2="7" end2="9" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
-        <range start1="13" end1="13" start2="14" end2="17" changelist="d30fd1b2-5826-4cf7-964a-503de5307170" />
-        <range start1="14" end1="15" start2="18" end2="19" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
-        <range start1="17" end1="17" start2="21" end2="22" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
-        <range start1="19" end1="20" start2="24" end2="25" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
-        <range start1="23" end1="24" start2="28" end2="34" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
-        <range start1="25" end1="25" start2="35" end2="63" changelist="903778e4-ae88-44f3-9b42-c058d1d62739" />
-        <range start1="31" end1="32" start2="69" end2="70" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
-        <range start1="33" end1="33" start2="71" end2="72" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
-        <range start1="34" end1="34" start2="73" end2="74" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
-        <range start1="35" end1="40" start2="75" end2="75" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
-        <range start1="42" end1="42" start2="77" end2="88" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
-        <range start1="43" end1="44" start2="89" end2="91" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
-        <range start1="50" end1="51" start2="97" end2="100" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
-        <range start1="52" end1="52" start2="101" end2="137" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
-        <range start1="53" end1="54" start2="138" end2="140" changelist="2d06b496-82ab-47a5-8b68-6d7702b9e5a4" />
+        <range start1="14" end1="16" start2="14" end2="16" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
+        <range start1="49" end1="50" start2="49" end2="50" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
+        <range start1="53" end1="54" start2="53" end2="54" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
+        <range start1="71" end1="74" start2="71" end2="72" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
+        <range start1="75" end1="77" start2="73" end2="75" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
+        <range start1="82" end1="82" start2="80" end2="81" changelist="903778e4-ae88-44f3-9b42-c058d1d62739" />
+        <range start1="106" end1="107" start2="105" end2="106" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
+        <range start1="108" end1="108" start2="107" end2="108" changelist="903778e4-ae88-44f3-9b42-c058d1d62739" />
+        <range start1="109" end1="114" start2="109" end2="117" changelist="903778e4-ae88-44f3-9b42-c058d1d62739" />
+        <range start1="117" end1="118" start2="120" end2="121" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
+        <range start1="126" end1="127" start2="129" end2="130" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
+        <range start1="129" end1="132" start2="132" end2="133" changelist="903778e4-ae88-44f3-9b42-c058d1d62739" />
       </ranges>
     </file>
-    <file path="$PROJECT_DIR$/src/Bill.java">
+    <file path="$PROJECT_DIR$/src/LoginSystem.java">
       <ranges>
-        <range start1="27" end1="29" start2="27" end2="31" changelist="d30fd1b2-5826-4cf7-964a-503de5307170" />
-        <range start1="52" end1="53" start2="54" end2="55" changelist="2d06b496-82ab-47a5-8b68-6d7702b9e5a4" />
-        <range start1="61" end1="63" start2="63" end2="65" changelist="d30fd1b2-5826-4cf7-964a-503de5307170" />
-        <range start1="68" end1="69" start2="70" end2="71" changelist="d30fd1b2-5826-4cf7-964a-503de5307170" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/SaveSystem.java">
-      <ranges>
-        <range start1="5" end1="6" start2="5" end2="6" changelist="903778e4-ae88-44f3-9b42-c058d1d62739" />
-        <range start1="7" end1="7" start2="7" end2="9" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
-        <range start1="9" end1="10" start2="11" end2="12" changelist="903778e4-ae88-44f3-9b42-c058d1d62739" />
-        <range start1="13" end1="14" start2="15" end2="16" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
-        <range start1="15" end1="16" start2="17" end2="18" changelist="903778e4-ae88-44f3-9b42-c058d1d62739" />
-        <range start1="23" end1="24" start2="25" end2="26" changelist="903778e4-ae88-44f3-9b42-c058d1d62739" />
-        <range start1="25" end1="26" start2="27" end2="28" changelist="903778e4-ae88-44f3-9b42-c058d1d62739" />
-        <range start1="29" end1="30" start2="31" end2="32" changelist="903778e4-ae88-44f3-9b42-c058d1d62739" />
-        <range start1="38" end1="39" start2="40" end2="41" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
-        <range start1="48" end1="49" start2="50" end2="51" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
-        <range start1="56" end1="56" start2="58" end2="84" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/Customer.java">
-      <ranges>
-        <range start1="1" end1="1" start2="1" end2="2" changelist="903778e4-ae88-44f3-9b42-c058d1d62739" />
-        <range start1="2" end1="4" start2="3" end2="6" changelist="d30fd1b2-5826-4cf7-964a-503de5307170" />
-        <range start1="6" end1="6" start2="8" end2="13" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
+        <range start1="59" end1="60" start2="59" end2="60" changelist="d30fd1b2-5826-4cf7-964a-503de5307170" />
+        <range start1="105" end1="106" start2="105" end2="107" changelist="3cc8f720-8ff7-4e4c-8bdc-289181e11e84" />
       </ranges>
     </file>
   </component>
@@ -141,11 +105,22 @@
       <option name="presentableId" value="Default" />
       <updated>1710930169408</updated>
       <workItem from="1710930170508" duration="5044000" />
-      <workItem from="1710935269753" duration="6361000" />
+      <workItem from="1710935269753" duration="9366000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

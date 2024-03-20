@@ -12,8 +12,8 @@ class POS {
 
     private HashMap<String, GloceryItem> inventory;
     private Operator operator;
-    private ArrayList<Bill> draftedBills;
-    private ArrayList<Customer> registeredCustomers;
+    private ArrayList<Bill> draftedBills = new ArrayList<>();
+    private ArrayList<Customer> registeredCustomers = new ArrayList<>();
     private Bill currentBill;
 
     public POS(Operator operator, HashMap<String, GloceryItem> inventory, ArrayList<Customer> registeredCustomers) {
@@ -47,11 +47,11 @@ class POS {
                 System.out.println("Customer is already chosen FIFO");
                 var customer = ChooseCustomer();
                 currentBill = new Bill(operator , customer);
-                CreateBill();
+                CreateBill(scanner);
                 yield false;
             }
             case "2" -> {
-                DraftedBills();
+                DraftedBills(scanner);
                 yield false;
             }
             case "98" -> true;
@@ -69,17 +69,16 @@ class POS {
 
         while(true){
             try {
-
-                System.out.println("Enter item code: ");
-                System.out.println("Enter -1 to terminate.");
+                System.out.println("Enter item code then Quantity (-1 to terminate): ");
                 String item_code = br.readLine();
-                br.close();
-                r.close();
+//                br.close();
+//                r.close();
 
                 if(inventory.containsKey(item_code)){
                     return inventory.get(item_code);
                 }
                 else if(item_code.equals("-1")) {
+                    currentBill.print();
                     return null;
                 }
                 else{
@@ -104,18 +103,22 @@ class POS {
         return registeredCustomers.get(0);
     }
 
-    private void CreateBill(){
+    private void CreateBill(Scanner scanner){
         GloceryItem item = getItemDetails();
+//        Scanner scanner = new Scanner(System.in);
         while(item != null){
-            System.out.println("Quantity : ");
-            Scanner scanner = new Scanner(System.in);
-            float quantity = scanner.nextFloat();
-            currentBill.addItem(item , quantity);
-            item = getItemDetails();
+            if (scanner.hasNextLine()) {
+                String quantity = scanner.nextLine();
+                float qty = Float.parseFloat(quantity);
+                currentBill.addItem(item, qty);
+                item = getItemDetails();
+            } else {
+                System.out.println("No input available. Please try again.");
+            }
         }
     }
 
-    private void DraftedBills(){
+    private void DraftedBills(Scanner scanner){
         if (draftedBills.isEmpty()){
             System.out.println("No Drafted Bills Available");
         }
@@ -124,12 +127,10 @@ class POS {
                 System.out.println(i+1 +". "+draftedBills.get(i).getCustomerName()+ "  "+draftedBills.get(i).getDateTime());
             };
             System.out.print("Select a Bill: ");
-            Scanner scanner = new Scanner(System.in);
+//            Scanner scanner = new Scanner(System.in);
             Integer choose= scanner.nextInt();
             currentBill=draftedBills.get(choose-1);
-            CreateBill();
-
-
+            CreateBill(scanner);
         }
     }
 }

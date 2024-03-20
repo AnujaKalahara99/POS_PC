@@ -57,7 +57,7 @@ public class LoginSystem {
 
         if (users.containsKey(username) && users.get(username).isPassword(password)) {
             Operator operator = users.get(username);
-            System.out.println("Signup successful! Welcome " + operator.getName());
+            System.out.println("Login successful! Welcome " + operator.getName());
             return operator;
         } else {
             System.out.println("Invalid username or password. Please try again.\n");
@@ -103,7 +103,8 @@ public class LoginSystem {
         Operator newOperator = new Operator(name, password, isAdmin);
         users.put(newOperator.getUserName(), newOperator);
 
-        System.out.println("Signup successful! Welcome " + newOperator.getName());
+        System.out.println("Signup successful! Welcome. Your username is " + newOperator.getUserName()
+                +". IMPORTANT! Remember for future Login");
         SaveSystem.addOperator(newOperator);
         return newOperator;
     }

@@ -33,7 +33,7 @@ public class Operator {
     }
 
     public boolean isPassword(String password) {
-        return this.password == password;
+        return this.password.equals(password);
     }
 
 }
