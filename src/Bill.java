@@ -25,8 +25,10 @@ public class Bill implements Serializable{
         return totalPrice;
     }
 
-    public LocalDateTime getDateTime() {
-        return dateTime;
+    public String getDateTime() {
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        String formattedDateTime = dtf.format(dateTime);
+        return formattedDateTime;
     }
 
 
@@ -50,7 +52,7 @@ public class Bill implements Serializable{
     public void addItem(GloceryItem product,Float quantity){
         itemList.put(product,quantity);
         totalDiscount+= product.getDiscount()*quantity;
-        totalPrice+=
+        totalPrice+= (product.getUnit_price()- product.getDiscount())*quantity;
 
     }
 
@@ -59,14 +61,14 @@ public class Bill implements Serializable{
 
     public void print() {
         float unitPrice, discount, netPrice,quantity;
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-        String formattedDateTime = dtf.format(dateTime);
+        //DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        //String formattedDateTime = dtf.format(dateTime);
 
         System.out.println("-------- Bill --------");
         System.out.println("Cashier: " + cashierName);
         System.out.println("Branch: " + branch);
         System.out.println("Customer: " + customerName);
-        System.out.println("Date and Time: " + formattedDateTime);
+        System.out.println("Date and Time: " + this.getDateTime());
         System.out.println("Items:");
         for (HashMap.Entry<GloceryItem, Float> entry : itemList.entrySet()) {
             unitPrice=entry.getKey().getUnit_price();

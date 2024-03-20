@@ -1,9 +1,16 @@
 import java.util.ArrayList;
+import java.io.Serializable;
 
-public class Customer {
-    private String name;
+public class Customer implements Serializable{
+
+    private String name="Unregistered Customer";
     private ArrayList<Bill> purchaseHis;
 
+    public Customer() {
+    }
+    public Customer(String name) {
+        this.name = name;
+    }
     public String getName() {
         return name;
     }
